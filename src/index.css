@@ -81,7 +81,6 @@ table{
 
 .loader:nth-child(1){
   background-color: #4285F4;
-  background-color: #fff;
   animation-delay: 0.2s;
 }
 .loader:nth-child(2){

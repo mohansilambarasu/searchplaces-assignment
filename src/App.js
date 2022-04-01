@@ -88,10 +88,6 @@ function App() {
     setserialheading('S.NO');
     setplaceheading('Place Name');
     setcountryheading('Country');
-  }
-
-
-  const finalSubmit = (e) => {
 
     e.preventDefault();
   }
@@ -99,12 +95,12 @@ function App() {
 
   return (
     <div>
-      <form onSubmit={finalSubmit}>
+      <form onSubmit={handleSubmit}>
         <label htmlFor="searchbar"></label>
 
         <div className="inputBox">
           <input type="text" name="searchbar" placeholder="Search Places..." value ={cityname} onChange={handletype}/>
-          <button type="button" role="submit" name="searchsubmit" onClick={handleSubmit}>Submit</button>
+          <button type="button" role="submit" name="searchsubmit">Submit</button>
         </div>
       </form>
 
