@@ -100,7 +100,7 @@ function App() {
 
         <div className="inputBox">
           <input type="text" name="searchbar" placeholder="Search Places..." value ={cityname} onChange={handletype}/>
-          <button type="button" role="submit" name="searchsubmit">Submit</button>
+          <button type="button" role="submit" name="searchsubmit" onClick={handleSubmit}>Submit</button>
         </div>
       </form>
 
